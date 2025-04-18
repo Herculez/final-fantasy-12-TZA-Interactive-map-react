@@ -153,7 +153,7 @@ function App() {
     // create a custom icon for the chests to be used
     // TODO: Create multiple icons for each map interactable (chests, hunts, key items etc)
     const customIcon = new Icon({
-        iconUrl: "${import.meta.env.BASE_URL}/Icons/Chestff12.png",
+        iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/Chestff12.png",
         iconSize: [30, 30],
     })
 
@@ -219,7 +219,7 @@ function App() {
                 crs={L.CRS.Simple}
             >
                 <ImageOverlay
-                    url="${import.meta.env.BASE_URL}/DalmascaEstersand/TheStepping.png"
+                    url="/final-fantasy-12-TZA-Interactive-map-react/DalmascaEstersand/TheStepping.png"
                     //url="/EastEndRabanastre/EastEnd.png"
                     bounds={bounds}>
                 </ImageOverlay>
