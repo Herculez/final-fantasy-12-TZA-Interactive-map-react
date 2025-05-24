@@ -1,9 +1,9 @@
 import './App.css'
 
-import {ImageOverlay, MapContainer, Marker, Popup, useMap} from "react-leaflet";
+import {ImageOverlay, MapContainer, Marker, Popup, Tooltip, useMapEvents} from "react-leaflet";
 import L from 'leaflet';
 import {Icon} from "leaflet/src/layer/index.js";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 
 function App() {
 
@@ -21,20 +21,158 @@ function App() {
 
     const mapTitles = [
         "Rabanastre - East End",
+        "Rabanastre - Southern Plaza",
+        "Rabanastre - East Gate",
         "Dalmasca Eastersand - The Stepping",
         "Dalmasca Eastersand - Yardang Labyrinth",
     ]
 
     const maps = [
         "/final-fantasy-12-TZA-Interactive-map-react/Rabanastre/EastEnd.png",
+        "/final-fantasy-12-TZA-Interactive-map-react/Rabanastre/SouthernPlaza.png",
+        "/final-fantasy-12-TZA-Interactive-map-react/Rabanastre/EastGate.png",
         "/final-fantasy-12-TZA-Interactive-map-react/DalmascaEstersand/TheStepping.png",
         "/final-fantasy-12-TZA-Interactive-map-react/DalmascaEstersand/YardangLabyrinth.png",
     ]
 
     // Array of marker objects Usage = (mapIndex([x,y],info))
     // TODO: Pull markers from an internal db to clean the code for larger maps
+    // TODO: Rotate tooltip travel markers/ potentially separate the tooltips from the markers
 
-    const eastEndMarkers = [];
+    const eastEndMarkers = [
+        {
+            geocode: [338,2491],
+            popUp: (
+                <>
+                    <h3>To Rabanastre - Southern Plaza</h3>
+                </>
+            ),
+            icon: new Icon({
+                iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+                iconSize: [30, 30],
+            }),
+            isHoverOnly: true,
+            onClick: () => handleClickNext(),
+        },
+        {
+            geocode: [2067,50],
+            popUp: (
+                <>
+                    <h3>To Rabanastre - Muthru Bazaar</h3>
+                </>
+            ),
+            icon: new Icon({
+                iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+                iconSize: [30, 30],
+            }),
+            isHoverOnly: true,
+            onClick: () => handleClickNext(),
+        },
+        {
+            geocode: [3083,2795],
+            popUp: (
+                <>
+                    <h3>To Rabanastre - North End</h3>
+                </>
+            ),
+            icon: new Icon({
+                iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+                iconSize: [30, 30],
+            }),
+            isHoverOnly: true,
+            onClick: () => handleClickNext(),
+        },
+    ];
+
+    const southernPlazaMarkers = [
+        {
+            geocode: [1600,3481],
+            popUp: (
+                <>
+                    <h3>To Rabanastre - East Gate</h3>
+                </>
+            ),
+            icon: new Icon({
+                iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+                iconSize: [30, 30],
+            }),
+            isHoverOnly: true,
+            onClick: () => handleClickNext(),
+        },
+        {
+            geocode: [-29,1700],
+            popUp: (
+                <>
+                    <h3>To Rabanastre - South Gate</h3>
+                </>
+            ),
+            icon: new Icon({
+                iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+                iconSize: [30, 30],
+            }),
+            isHoverOnly: true,
+            onClick: () => handleClickPrev(),
+        },
+        {
+            geocode: [1611,-56],
+            popUp: (
+                <>
+                    <h3>To Rabanastre - West Gate</h3>
+                </>
+            ),
+            icon: new Icon({
+                iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+                iconSize: [30, 30],
+            }),
+            isHoverOnly: true,
+            onClick: () => handleClickPrev(),
+        },
+        {
+            geocode: [2276,2569],
+            popUp: (
+                <>
+                    <h3>To Rabanastre - East End</h3>
+                </>
+            ),
+            icon: new Icon({
+                iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+                iconSize: [30, 30],
+            }),
+            isHoverOnly: true,
+            onClick: () => handleClickPrev(),
+        },
+    ];
+
+    const eastGateMarkers = [
+        {
+            geocode: [1274,74],
+            popUp: (
+                <>
+                    <h3>To Rabanastre - Southern Plaza</h3>
+                </>
+            ),
+            icon: new Icon({
+                iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+                iconSize: [30, 30],
+            }),
+            isHoverOnly: true,
+            onClick: () => handleClickPrev(),
+        },
+        {
+            geocode: [1342,3410],
+            popUp: (
+                <>
+                    <h3>To Dalmasca Estersand - The Stepping</h3>
+                </>
+            ),
+            icon: new Icon({
+                iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+                iconSize: [30, 30],
+            }),
+            isHoverOnly: true,
+            onClick: () => handleClickNext(),
+        },
+    ];
 
     const theSteppingMarkers = [
         {
@@ -168,6 +306,34 @@ function App() {
                 </>
             )
         },
+        {
+            geocode: [3120,1960],
+            popUp: (
+                <>
+                    <h3>Dalmasca Estersand - Yardang Labyrinth</h3>
+                </>
+            ),
+            icon: new Icon({
+                iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+                iconSize: [30, 30],
+            }),
+            isHoverOnly: true,
+            onClick: () => handleClickNext(),
+        },
+        {
+            geocode: [125,240],
+            popUp: (
+                <>
+                    <h3>To Rabanastre - East Gate</h3>
+                </>
+            ),
+            icon: new Icon({
+                iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+                iconSize: [30, 30],
+            }),
+            isHoverOnly: true,
+            onClick: () => handleClickPrev(),
+        },
     ];
 
     const yardangLabyrinthMarkers = [
@@ -182,8 +348,7 @@ function App() {
                     <strong>Chance:</strong> 35% <br />
                     <strong>Gil Amount:</strong> 35
                 </>
-            )
-
+            ),
         },
         {
             geocode: [803,1089],
@@ -289,10 +454,66 @@ function App() {
                 </>
             )
         },
+        {
+            geocode: [1108,-23],
+            popUp: (
+                <>
+                    <h3>To Dalmasca Estersand - Outpost</h3>
+                </>
+            ),
+            icon: new Icon({
+                iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+                iconSize: [30, 30],
+            }),
+            isHoverOnly: true,
+            onClick: () => handleClickPrev(),
+        },
+        {
+            geocode: [-76,1184],
+            popUp: (
+                <>
+                    <h3>To Giza Plains</h3>
+                </>
+            ),
+            icon: new Icon({
+                iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+                iconSize: [30, 30],
+            }),
+            isHoverOnly: true,
+            onClick: () => handleClickPrev(),
+        },
+        {
+            geocode: [2330,3409],
+            popUp: (
+                <>
+                    <h3>To Nalbina Fortress</h3>
+                </>
+            ),
+            icon: new Icon({
+                iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+                iconSize: [30, 30],
+            }),
+            isHoverOnly: true,
+            onClick: () => handleClickPrev(),
+        },
+        {
+            geocode: [3162,1740],
+            popUp: (
+                <>
+                    <h3>To Dalmasca Estersand - Sand-swept Maze</h3>
+                </>
+            ),
+            icon: new Icon({
+                iconUrl: "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+                iconSize: [30, 30],
+            }),
+            isHoverOnly: true,
+            onClick: () => handleClickPrev(),
+        },
     ];
 
     const markers = [
-        eastEndMarkers, theSteppingMarkers, yardangLabyrinthMarkers
+        eastEndMarkers, southernPlazaMarkers, eastGateMarkers, theSteppingMarkers, yardangLabyrinthMarkers
     ]
 
     // create a custom icon for the chests to be used
@@ -329,45 +550,20 @@ function App() {
     }
 
     // Testing function remove when done
-    // Credit to: Grzegorz T. https://stackoverflow.com/users/10424385/grzegorz-t
-        const GetCoordinates = () => {
-        console.log("Get Coordinates start")
-        // hook for leaflet map instance
-        // allows us to interact with the map instance thats generated by the <MapContainer>
-        const map = useMap();
-        let count = 0;
-
-        useEffect(() => {
-            // If there is no map just end the function
-            if (!map) return;
-
-            // Create a div in the bottom right for testing purposes
-                const info = L.DomUtil.create("div", "legend");
-
-            const position = L.Control.extend({
-                options: {
-                    position: 'bottomright'
-                },
-
-                // When the div is created it is e,pty
-                onAdd: function () {
-                    info.textContent = '';
-                    return info;
-                }
-            })
-
-            // When the mouse moves on the map, put the latlng coord in the div
-            map.on('mousemove', (e) => {
-                info.textContent = e.latlng;
-            })
-
-            map.on('click', (e) => {
+    // https://stackoverflow.com/questions/70392715/how-to-get-coordinates-of-current-mouse-click-in-leaflet-react-js/70399299#70399299
+    // Credit to: Muhammad Habibpour https://stackoverflow.com/users/10984472/muhammad-habibpour
+    const MapEvents = () => {
+        let count = 1;
+        useMapEvents({
+            click(e) {
+                // setState your coords here
+                // coords exist in "e.latlng.lat" and "e.latlng.lng"
+                console.log("Marker: " , count, e.latlng);
                 count++
-                console.log("Chest Number: " , count, e.latlng);
-            })
-            map.addControl(new position());
-            // the map is the dependancy for this func
-            }, [map])
+                //console.log(e.latlng.lng);
+            },
+        });
+        return false;
     }
 
     // Show the app class on the page
@@ -396,12 +592,20 @@ function App() {
                     url={currentMap}
                     bounds={bounds}>
                 </ImageOverlay>
-                <GetCoordinates />
+                <MapEvents></MapEvents>
                 {markers[currentMapIndex].map((marker => (
-                        <Marker position={marker.geocode} icon={customIcon} key={marker.geocode}>
-                            <Popup autoPan={false}>
-                                {marker.popUp}
-                            </Popup>
+                        <Marker position={marker.geocode} icon={marker.icon || customIcon} key={marker.geocode} eventHandlers={{
+                            click: marker.onClick,
+                        }}>
+                            {marker.isHoverOnly ? (
+                                <Tooltip direction="top" offset={[0, -10]} opacity={1} permanent={false}>
+                                    {marker.popUp}
+                                </Tooltip>
+                            ) : (
+                                <Popup autoPan={false}>
+                                    {marker.popUp}
+                                </Popup>
+                            )}
                         </Marker>
                 )))}
             </MapContainer>
