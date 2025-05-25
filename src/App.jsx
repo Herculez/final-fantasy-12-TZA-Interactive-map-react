@@ -16,11 +16,14 @@ function App() {
         [3076 + padding,3438 + padding]
     );
 
-    const [currentMap, setCurrentMap] = useState("/final-fantasy-12-TZA-Interactive-map-react/Rabanastre/EastEnd.png");
-    const [currentMapIndex, setCurrentMapIndex] = useState(0);
+    const [currentMap, setCurrentMap] = useState("/final-fantasy-12-TZA-Interactive-map-react/Rabanastre/SouthernPlaza.png");
+    const [currentMapIndex, setCurrentMapIndex] = useState(4);
 
     const mapTitles = [
         "Rabanastre - East End",
+        "Rabanastre - Muthru Bazaar",
+        "Rabanastre - West Gate",
+        "Rabanastre - West Gate",
         "Rabanastre - Southern Plaza",
         "Rabanastre - East Gate",
         "Dalmasca Eastersand - The Stepping",
@@ -28,11 +31,14 @@ function App() {
     ]
 
     const maps = [
-        "/final-fantasy-12-TZA-Interactive-map-react/Rabanastre/EastEnd.png",
-        "/final-fantasy-12-TZA-Interactive-map-react/Rabanastre/SouthernPlaza.png",
-        "/final-fantasy-12-TZA-Interactive-map-react/Rabanastre/EastGate.png",
-        "/final-fantasy-12-TZA-Interactive-map-react/DalmascaEstersand/TheStepping.png",
-        "/final-fantasy-12-TZA-Interactive-map-react/DalmascaEstersand/YardangLabyrinth.png",
+        "/final-fantasy-12-TZA-Interactive-map-react/Rabanastre/EastEnd.png", //0
+        "/final-fantasy-12-TZA-Interactive-map-react/Rabanastre/MuthruBazaar.png", //1
+        "/final-fantasy-12-TZA-Interactive-map-react/Rabanastre/SouthGate.png", //2
+        "/final-fantasy-12-TZA-Interactive-map-react/Rabanastre/WestGate.png", //3
+        "/final-fantasy-12-TZA-Interactive-map-react/Rabanastre/SouthernPlaza.png", //4
+        "/final-fantasy-12-TZA-Interactive-map-react/Rabanastre/EastGate.png", //5
+        "/final-fantasy-12-TZA-Interactive-map-react/DalmascaEstersand/TheStepping.png", //6
+        "/final-fantasy-12-TZA-Interactive-map-react/DalmascaEstersand/YardangLabyrinth.png", //7
     ]
 
     // Array of marker objects Usage = (mapIndex([x,y],info))
@@ -52,7 +58,7 @@ function App() {
                 iconSize: [30, 30],
             }),
             isHoverOnly: true,
-            onClick: () => handleClickNext(),
+            onClick: () => handleClickIdx(4),
         },
         {
             geocode: [2067,50],
@@ -66,7 +72,7 @@ function App() {
                 iconSize: [30, 30],
             }),
             isHoverOnly: true,
-            onClick: () => handleClickNext(),
+            onClick: () => handleClickIdx(1),
         },
         {
             geocode: [3083,2795],
@@ -84,6 +90,12 @@ function App() {
         },
     ];
 
+    const muthruBazaarMarkers = [];
+
+    const southGateMarkers = [];
+
+    const westGateMarkers = [];
+
     const southernPlazaMarkers = [
         {
             geocode: [1600,3481],
@@ -97,7 +109,7 @@ function App() {
                 iconSize: [30, 30],
             }),
             isHoverOnly: true,
-            onClick: () => handleClickNext(),
+            onClick: () => handleClickIdx(5),
         },
         {
             geocode: [-29,1700],
@@ -111,7 +123,7 @@ function App() {
                 iconSize: [30, 30],
             }),
             isHoverOnly: true,
-            onClick: () => handleClickPrev(),
+            onClick: () => handleClickIdx(2),
         },
         {
             geocode: [1611,-56],
@@ -125,7 +137,7 @@ function App() {
                 iconSize: [30, 30],
             }),
             isHoverOnly: true,
-            onClick: () => handleClickPrev(),
+            onClick: () => handleClickIdx(3),
         },
         {
             geocode: [2276,2569],
@@ -139,7 +151,7 @@ function App() {
                 iconSize: [30, 30],
             }),
             isHoverOnly: true,
-            onClick: () => handleClickPrev(),
+            onClick: () => handleClickIdx(0),
         },
     ];
 
@@ -513,7 +525,7 @@ function App() {
     ];
 
     const markers = [
-        eastEndMarkers, southernPlazaMarkers, eastGateMarkers, theSteppingMarkers, yardangLabyrinthMarkers
+        eastEndMarkers, muthruBazaarMarkers, southGateMarkers, westGateMarkers, southernPlazaMarkers, eastGateMarkers, theSteppingMarkers, yardangLabyrinthMarkers
     ]
 
     // create a custom icon for the chests to be used
@@ -533,7 +545,6 @@ function App() {
             setCurrentMapIndex(currentMapIndex + 1)
         }
 
-
     }
 
     const handleClickPrev = () => {
@@ -546,7 +557,15 @@ function App() {
             setCurrentMapIndex(currentMapIndex - 1)
         }
 
+    }
 
+    const handleClickIdx = (idx) => {
+        console.log(currentMap)
+        console.log("Click")
+        console.log(currentMapIndex)
+        console.log("Changing Map IDX")
+        setCurrentMap(maps[idx])
+        setCurrentMapIndex(idx)
     }
 
     // Testing function remove when done
