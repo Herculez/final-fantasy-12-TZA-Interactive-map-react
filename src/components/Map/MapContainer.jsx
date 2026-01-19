@@ -1,6 +1,5 @@
 import {MapContainer as LeafletMap, ImageOverlay, Marker} from 'react-leaflet';
 import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
 import { getMapImagePath } from "../../utils/constants.js";
 import MapMarker from "./MapMarker.jsx";
 
@@ -18,14 +17,14 @@ const MapContainer = ({ mapData, markers, onMarkerClick}) => {
     console.log("Markers for map:", mapData.id, mapMarkers);
 
     return (
-        <LeafletMap
+        <LeafletMap className= "leaflet-container"
             key={mapData.id}
             center={mapData.center}
             zoom={mapData.zoom}
             minZoom={mapData.minZoom}
             maxZoom={mapData.maxZoom}
             crs={L.CRS.Simple}
-            style={{ height: '600px', width: '100%', backgroundColor: 'transparent' }}
+            style={{ height: '100%', width: '100%', backgroundColor: 'transparent' }}
         >
             <ImageOverlay
                 url={imagePath}

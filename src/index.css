@@ -1,3 +1,35 @@
+@theme {
+--ivalice-gold: #D4AF37;
+--ivalice-bronze: #8C6D3F;
+--ivalice-dark: #1a1612;
+--ivalice-brown: #3d2f24;
+--ivalice-blue: #2a3d66;
+--ivalice-purple: #4a3366;
+--ivalice-cream: #f5ead6;
+--mist-blue: #5c7a99;
+--mist-purple: #6b5b8c;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

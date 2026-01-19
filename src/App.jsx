@@ -2,6 +2,9 @@ import { useMapData } from './hooks/useMapData.js';
 import { useMarkers } from "./hooks/useMarkers.js";
 import MapContainer from './components/Map/MapContainer.jsx';
 import MapNavigation from './components/Map/MapNavigation.jsx';
+import Navbar from './components/UI/Navbar.jsx';
+import Sidebar from './components/UI/Sidebar.jsx';
+import 'leaflet/dist/leaflet.css'
 import './App.css';
 
 function App() {
@@ -43,26 +46,36 @@ function App() {
     }
 
     return (
-        <div className ="app">
-            <MapNavigation
-             onNext={goToNextMap}
-             onPrevious={goToPreviousMap}
-             hasNext={hasNext}
-             hasPrevious={hasPrevious}
-             currentMapName={currentMap.displayName}
-            />
-            <MapContainer
-                mapData={currentMap}
-                markers={markers}
-                onMarkerClick={handleMarkerClick}
-            />
+            <div className="app-container">
+                <Navbar></Navbar>
 
-            <div style = {{ padding: '10px', backgroundColor: 'black' }}>
-                <p><strong>Current Map ID:</strong> {currentMapId}</p>
-                <p><strong>Connected Maps:</strong> {connectedMapIds.join(', ')}</p>
-                <p><strong>Markers:</strong> {markers.length}</p>
+                <div className="main-content">
+                    <Sidebar></Sidebar>
+
+                    <div className= "map-wrapper" style={{ flex: 1, display: "flex", flexDirection: 'column'}}>
+                        <MapNavigation
+                         onNext={goToNextMap}
+                         onPrevious={goToPreviousMap}
+                         hasNext={hasNext}
+                         hasPrevious={hasPrevious}
+                         currentMapName={currentMap.displayName}
+                        />
+                        <div className= "map-container">
+                            <MapContainer
+                                mapData={currentMap}
+                                markers={markers}
+                                onMarkerClick={handleMarkerClick}
+                            />
+                        </div>
+
+                        <div style = {{ padding: '10px', backgroundColor: 'black' }}>
+                            <p><strong>Current Map ID:</strong> {currentMapId}</p>
+                            <p><strong>Connected Maps:</strong> {connectedMapIds.join(', ')}</p>
+                            <p><strong>Markers:</strong> {markers.length}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
     )
 }
 export default App;

@@ -2,10 +2,10 @@
   "rabanastre_muthru_bazaar": {
     "id": "rabanastre_muthru_bazaar",
     "region": "Rabanastre",
-    "filename": "MuthruBazzar.png",
+    "filename": "MuthruBazaar.png",
     "displayName": "Rabanastre - Muthru Bazaar",
-    "bounds": [[0,0],[3076,3438]],
-    "center": [1538, 1719],
+    "bounds": [[0,0],[2434,959]],
+    "center": [1217, 479],
     "zoom": -2,
     "minZoom": -3,
     "maxZoom": 1
@@ -15,10 +15,10 @@
     "region": "Rabanastre",
     "filename": "EastEnd.png",
     "displayName": "Rabanastre - East End",
-    "bounds": [[0,0],[3076,3438]],
-    "center": [1538, 1719],
+    "bounds": [[0,0],[2459,2401]],
+    "center": [1229, 1200],
     "zoom": -2,
-    "minZoom": -3,
+    "minZoom": -2,
     "maxZoom": 1
   },
   "rabanastre_southern_plaza": {
@@ -37,8 +37,8 @@
     "region": "Rabanastre",
     "filename": "SouthGate.png",
     "displayName": "Rabanastre - South Gate",
-    "bounds": [[0,0],[3076,3438]],
-    "center": [1538, 1719],
+    "bounds": [[0,0],[1409,780]],
+    "center": [704, 390],
     "zoom": -2,
     "minZoom": -3,
     "maxZoom": 1
@@ -50,7 +50,7 @@
     "displayName": "Rabanastre - East Gate",
     "bounds": [[0,0],[3076,3438]],
     "center": [1538, 1719],
-    "zoom": -2,
+    "zoom": -3,
     "minZoom": -3,
     "maxZoom": 1
   },
@@ -59,10 +59,10 @@
     "region": "Rabanastre",
     "filename": "WestGate.png",
     "displayName": "Rabanastre - West Gate",
-    "bounds": [[0,0],[3076,3438]],
-    "center": [1538, 1719],
+    "bounds": [[0,0],[809,1430]],
+    "center": [404, 765],
     "zoom": -2,
-    "minZoom": -3,
+    "minZoom": -2,
     "maxZoom": 1
   },
   "dalmasca_estersand_the_stepping": {
@@ -70,9 +70,9 @@
     "region": "DalmascaEstersand",
     "filename": "TheStepping.png",
     "displayName": "Dalmasca Estersand - The Stepping",
-    "bounds": [[0,0],[3076,3438]],
-    "center": [1538, 1719],
-    "zoom": -2,
+    "bounds": [[0,0],[3438,3076]],
+    "center": [1719, 1538],
+    "zoom": -3,
     "minZoom": -3,
     "maxZoom": 1
   },
@@ -81,9 +81,9 @@
     "region": "DalmascaEstersand",
     "filename": "YardangLabyrinth.png",
     "displayName": "Dalmasca Estersand - Yardang Labyrinth",
-    "bounds": [[0,0],[3076,3438]],
-    "center": [1538, 1719],
-    "zoom": -2,
+    "bounds": [[0,0],[3438,3076]],
+    "center": [1719, 1538],
+    "zoom": -3,
     "minZoom": -3,
     "maxZoom": 1
   }

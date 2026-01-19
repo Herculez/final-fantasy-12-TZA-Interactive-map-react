@@ -1,6 +1,5 @@
 import {Marker, Popup, Tooltip} from 'react-leaflet';
 import { Icon } from 'leaflet';
-import 'leaflet/dist/leaflet.css';
 
 // Map marker init
 
