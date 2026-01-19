@@ -1,0 +1,10 @@
+{
+  "rabanastre_muthru_bazaar": ["rabanastre_east_end"],
+  "rabanastre_east_end": ["rabanastre_southern_plaza","rabanastre_muthru_bazaar"],
+  "rabanastre_southern_plaza": ["rabanastre_east_end","rabanastre_east_gate","rabanastre_south_gate","rabanastre_west_gate"],
+  "rabanastre_south_gate": ["rabanastre_southern_plaza"],
+  "rabanastre_east_gate": ["rabanastre_southern_plaza","dalmasca_estersand_the_stepping"],
+  "rabanastre_west_gate": ["rabanastre_southern_plaza"],
+  "dalmasca_estersand_the_stepping": ["rabanastre_east_gate","dalmasca_estersand_yardang_labyrinth"],
+  "dalmasca_estersand_yardang_labyrinth": ["dalmasca_estersand_the_stepping"]
+}

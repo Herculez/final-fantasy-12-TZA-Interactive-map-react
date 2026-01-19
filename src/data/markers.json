@@ -1,0 +1,55 @@
+{
+  "rabanastre_east_end": [],
+  "rabanastre_muthru_bazaar": [],
+  "rabanastre_southern_plaza": [
+    {
+      "id": "marker_001",
+      "geocode": [1050, 2050],
+      "popup": "<h3>To Rabanastre - East Gate</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "rabanastre_east_gate"
+    },
+    {
+      "id": "marker_002",
+      "geocode": [90,1075],
+      "popup": "<h3>To Rabanastre - South Gate</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "rabanastre_south_gate"
+    },
+    {
+      "id": "marker_003",
+      "geocode": [1050,100],
+      "popup": "<h3>To Rabanastre - West Gate</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "rabanastre_west_gate"
+    },
+    {
+      "id": "marker_004",
+      "geocode": [1450, 1550],
+      "popup": "<h3>To Rabanastre - East End</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+    "isHoverOnly": true,
+    "targetMap": "rabanastre_east_end"
+    }
+  ],
+  "rabanastre_south_gate": [],
+  "rabanastre_east_gate": [],
+  "rabanastre_west_gate": [],
+  "dalmasca_estersand_the_stepping": [],
+  "dalmasca_estersand_yardang_labyrinth": []
+}

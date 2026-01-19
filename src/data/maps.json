@@ -1,0 +1,90 @@
+{
+  "rabanastre_muthru_bazaar": {
+    "id": "rabanastre_muthru_bazaar",
+    "region": "Rabanastre",
+    "filename": "MuthruBazzar.png",
+    "displayName": "Rabanastre - Muthru Bazaar",
+    "bounds": [[0,0],[3076,3438]],
+    "center": [1538, 1719],
+    "zoom": -2,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "rabanastre_east_end": {
+    "id": "rabanastre_east_end",
+    "region": "Rabanastre",
+    "filename": "EastEnd.png",
+    "displayName": "Rabanastre - East End",
+    "bounds": [[0,0],[3076,3438]],
+    "center": [1538, 1719],
+    "zoom": -2,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "rabanastre_southern_plaza": {
+    "id": "rabanastre_southern_plaza",
+    "region": "Rabanastre",
+    "filename": "SouthernPlaza.png",
+    "displayName": "Rabanastre - Southern Plaza",
+    "bounds": [[0,0],[2005,2143]],
+    "center": [1002, 1071],
+    "zoom": -2,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "rabanastre_south_gate": {
+    "id": "rabanastre_south_gate",
+    "region": "Rabanastre",
+    "filename": "SouthGate.png",
+    "displayName": "Rabanastre - South Gate",
+    "bounds": [[0,0],[3076,3438]],
+    "center": [1538, 1719],
+    "zoom": -2,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "rabanastre_east_gate": {
+    "id": "rabanastre_east_gate",
+    "region": "Rabanastre",
+    "filename": "EastGate.png",
+    "displayName": "Rabanastre - East Gate",
+    "bounds": [[0,0],[3076,3438]],
+    "center": [1538, 1719],
+    "zoom": -2,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "rabanastre_west_gate": {
+    "id": "rabanastre_west_gate",
+    "region": "Rabanastre",
+    "filename": "WestGate.png",
+    "displayName": "Rabanastre - West Gate",
+    "bounds": [[0,0],[3076,3438]],
+    "center": [1538, 1719],
+    "zoom": -2,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "dalmasca_estersand_the_stepping": {
+    "id": "dalmasca_estersand_the_stepping",
+    "region": "DalmascaEstersand",
+    "filename": "TheStepping.png",
+    "displayName": "Dalmasca Estersand - The Stepping",
+    "bounds": [[0,0],[3076,3438]],
+    "center": [1538, 1719],
+    "zoom": -2,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "dalmasca_estersand_yardang_labyrinth": {
+    "id": "dalmasca_estersand_yardang_labyrinth",
+    "region": "DalmascaEstersand",
+    "filename": "YardangLabyrinth.png",
+    "displayName": "Dalmasca Estersand - Yardang Labyrinth",
+    "bounds": [[0,0],[3076,3438]],
+    "center": [1538, 1719],
+    "zoom": -2,
+    "minZoom": -3,
+    "maxZoom": 1
+  }
+}
