@@ -39,8 +39,8 @@
     "displayName": "Rabanastre - South Gate",
     "bounds": [[0,0],[1409,780]],
     "center": [704, 390],
-    "zoom": -2,
-    "minZoom": -3,
+    "zoom": -1,
+    "minZoom": -1,
     "maxZoom": 1
   },
   "rabanastre_east_gate": {
@@ -48,10 +48,10 @@
     "region": "Rabanastre",
     "filename": "EastGate.png",
     "displayName": "Rabanastre - East Gate",
-    "bounds": [[0,0],[3076,3438]],
-    "center": [1538, 1719],
-    "zoom": -3,
-    "minZoom": -3,
+    "bounds": [[0,0],[809,1430]],
+    "center": [404, 765],
+    "zoom": -1,
+    "minZoom": -1,
     "maxZoom": 1
   },
   "rabanastre_west_gate": {
@@ -61,8 +61,8 @@
     "displayName": "Rabanastre - West Gate",
     "bounds": [[0,0],[809,1430]],
     "center": [404, 765],
-    "zoom": -2,
-    "minZoom": -2,
+    "zoom": -1,
+    "minZoom": -1,
     "maxZoom": 1
   },
   "dalmasca_estersand_the_stepping": {
@@ -85,6 +85,193 @@
     "center": [1719, 1538],
     "zoom": -3,
     "minZoom": -3,
+    "maxZoom": 1
+  },
+  "barheim_passage_the_lightworks": {
+    "id": "barheim_passage_the_lightworks",
+    "region": "BarheimPassage",
+    "filename": "TheLightworks.png",
+    "displayName": "Barheim Passage - The Lightworks",
+    "bounds": [[0,0],[1188,1550]],
+    "center": [559, 775],
+    "zoom": -1,
+    "minZoom": -1,
+    "maxZoom": 1
+  },
+  "barheim_passage_op_sector_29": {
+    "id": "barheim_passage_op_sector_29",
+    "region": "BarheimPassage",
+    "filename": "OpSector29.png",
+    "displayName": "Barheim Passage - Op Sector 29",
+    "bounds": [[0,0],[2693,1868]],
+    "center": [1346, 934],
+    "zoom": -2,
+    "minZoom": -2,
+    "maxZoom": 1
+  },
+  "barheim_passage_great_eastern_passage": {
+    "id": "barheim_passage_great_eastern_passage",
+    "region": "BarheimPassage",
+    "filename": "GreatEasternPassage.png",
+    "displayName": "Barheim Passage - Great Eastern Passage",
+    "bounds": [[0,0],[4193,1510]],
+    "center": [2100, 755],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "barheim_passage_op_sector_36": {
+    "id": "barheim_passage_op_sector_36",
+    "region": "BarheimPassage",
+    "filename": "OpSector36.png",
+    "displayName": "Barheim Passage - Op Sector 36",
+    "bounds": [[0,0],[1601,1347]],
+    "center": [800, 673],
+    "zoom": -2,
+    "minZoom": -2,
+    "maxZoom": 1
+  },
+  "barheim_passage_special_op_sector_3": {
+    "id": "barheim_passage_special_op_sector_3",
+    "region": "BarheimPassage",
+    "filename": "SpecialOpSector3.png",
+    "displayName": "Barheim Passage - Special Op Sector 3",
+    "bounds": [[0,0],[3559,3726]],
+    "center": [1775, 1863],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "barheim_passage_op_sector_37": {
+    "id": "barheim_passage_op_sector_37",
+    "region": "BarheimPassage",
+    "filename": "OpSector37.png",
+    "displayName": "Barheim Passage - Op Sector 37",
+    "bounds": [[0,0],[2493,2209]],
+    "center": [1247, 1104],
+    "zoom": -2,
+    "minZoom": -2,
+    "maxZoom": 1
+  },
+  "barheim_passage_north_south_junction": {
+    "id": "barheim_passage_north_south_junction",
+    "region": "BarheimPassage",
+    "filename": "NorthSouthJunction.png",
+    "displayName": "Barheim Passage - North-South Junction",
+    "bounds": [[0,0],[1493,609]],
+    "center": [747, 304],
+    "zoom": -1,
+    "minZoom": -1,
+    "maxZoom": 1
+  },
+  "barheim_passage_great_central_passage": {
+    "id": "barheim_passage_great_central_passage",
+    "region": "BarheimPassage",
+    "filename": "GreatCentralPassage.png",
+    "displayName": "Barheim Passage - Great Central Passage",
+    "bounds": [[0,0],[3617,3784]],
+    "center": [1858, 1892],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "barheim_passage_the_zeviah_subterrane": {
+    "id": "barheim_passage_the_zeviah_subterrane",
+    "region": "BarheimPassage",
+    "filename": "TheZeviahSubterrane.png",
+    "displayName": "Barheim Passage - The Zeviah Subterrane",
+    "bounds": [[0,0],[4705,4717]],
+    "center": [2352, 2858],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "barheim_passage_terminus_no.4_adjunct": {
+    "id": "barheim_passage_terminus_no.4_adjunct",
+    "region": "BarheimPassage",
+    "filename": "TerminusNo.4Adjunct.png",
+    "displayName": "Barheim Passage - Terminus No.4 Adjunct",
+    "bounds": [[0,0],[1759,1101]],
+    "center": [859, 550],
+    "zoom": -2,
+    "minZoom": -2,
+    "maxZoom": 1
+  },
+  "barheim_passage_terminus_no.4": {
+    "id": "barheim_passage_terminus_no.4",
+    "region": "BarheimPassage",
+    "filename": "TerminusNo.4.png",
+    "displayName": "Barheim Passage - Terminus No.4",
+    "bounds": [[0,0],[2034,1459]],
+    "center": [1017, 729],
+    "zoom": -2,
+    "minZoom": -2,
+    "maxZoom": 1
+  },
+  "barheim_passage_special_op_sector_5": {
+    "id": "barheim_passage_special_op_sector_5",
+    "region": "BarheimPassage",
+    "filename": "SpecialOpSector5.png",
+    "displayName": "Barheim Passage - Special Op Sector 5",
+    "bounds": [[0,0],[1400,6450]],
+    "center": [700,3225],
+    "zoom": -2,
+    "minZoom": -2,
+    "maxZoom": 1
+  },
+  "barheim_passage_east_west_bypass": {
+    "id": "barheim_passage_east_west_bypass",
+    "region": "BarheimPassage",
+    "filename": "EastWestBypass.png",
+    "displayName": "Barheim Passage - East West Bypass",
+    "bounds": [[0,0],[1493,5143]],
+    "center": [746, 2571],
+    "zoom": -2,
+    "minZoom": -2,
+    "maxZoom": 1
+  },
+  "barheim_passage_the_zeviah_span": {
+    "id": "barheim_passage_the_zeviah_span",
+    "region": "BarheimPassage",
+    "filename": "TheZeviahSpan.png",
+    "displayName": "Barheim Passage - The Zeviah Span",
+    "bounds": [[0,0],[10922,1496]],
+    "center": [5461, 748],
+    "zoom": -4,
+    "minZoom": -4,
+    "maxZoom": 1
+  },
+  "barheim_passage_west_annex": {
+    "id": "barheim_passage_west_annex",
+    "region": "BarheimPassage",
+    "filename": "WestAnnex.png",
+    "displayName": "Barheim Passage - West Annex",
+    "bounds": [[0,0],[3093,3889]],
+    "center": [1546, 1944],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "barheim_passage_terminus_no.7_adjunct": {
+    "id": "barheim_passage_terminus_no.7_adjunct",
+    "region": "BarheimPassage",
+    "filename": "TerminusNo.7Adjunct.png",
+    "displayName": "Barheim Passage - Terminus No.7 Adjunct",
+    "bounds": [[0,0],[1584,2734]],
+    "center": [792, 1367],
+    "zoom": -2,
+    "minZoom": -2,
+    "maxZoom": 1
+  },
+  "barheim_passage_terminus_no.7": {
+    "id": "barheim_passage_terminus_no.7",
+    "region": "BarheimPassage",
+    "filename": "TerminusNo.7.png",
+    "displayName": "Barheim Passage - Terminus No.7",
+    "bounds": [[0,0],[2184,5009]],
+    "center": [1092, 2504],
+    "zoom": -2,
+    "minZoom": -2,
     "maxZoom": 1
   }
 }
