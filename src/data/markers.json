@@ -1,6 +1,87 @@
 {
-  "rabanastre_east_end": [],
-  "rabanastre_muthru_bazaar": [],
+  "rabanastre_north_end": [
+    {
+      "id": "marker_001",
+      "geocode": [50, 340],
+      "popup": "<h3>To Rabanastre - Muthru Bazaar</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "rabanastre_muthru_bazaar"
+    },
+    {
+      "id": "marker_002",
+      "geocode": [50, 2190],
+      "popup": "<h3>To Rabanastre - East End</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "rabanastre_east_end"
+    }
+  ],
+  "rabanastre_east_end": [
+    {
+      "id": "marker_001",
+      "geocode": [60, 1940],
+      "popup": "<h3>To Rabanastre - Southern Plaza</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "rabanastre_southern_plaza"
+    },
+    {
+      "id": "marker_002",
+      "geocode": [1625, 90],
+      "popup": "<h3>To Rabanastre - Muthru Bazaar</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "rabanastre_muthru_bazaar"
+    },
+    {
+      "id": "marker_003",
+      "geocode": [2380, 1930],
+      "popup": "<h3>To Rabanastre - North End</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "rabanastre_north_end"
+    }
+  ],
+  "rabanastre_muthru_bazaar": [
+    {
+      "id": "marker_001",
+      "geocode": [1580, 890],
+      "popup": "<h3>To Rabanastre - East End</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "rabanastre_east_end"
+    },
+    {
+      "id": "marker_002",
+      "geocode": [2380, 545],
+      "popup": "<h3>To Rabanastre - North End</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "rabanastre_north_end"
+    }
+  ],
   "rabanastre_southern_plaza": [
     {
       "id": "marker_001",
@@ -47,9 +128,78 @@
     "targetMap": "rabanastre_east_end"
     }
   ],
-  "rabanastre_south_gate": [],
-  "rabanastre_east_gate": [],
-  "rabanastre_west_gate": [],
+  "rabanastre_south_gate": [
+    {
+      "id": "marker_001",
+      "geocode": [1340, 335],
+      "popup": "<h3>To Rabanastre - Southern Plaza</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "rabanastre_southern_plaza"
+    },
+    {
+      "id": "marker_002",
+      "geocode": [50, 335],
+      "popup": "<h3>To Dalmasca Estersand - The Stepping</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "dalmasca_estersand_the_stepping"
+    }
+  ],
+  "rabanastre_east_gate": [
+    {
+      "id": "marker_001",
+      "geocode": [340, 90],
+      "popup": "<h3>To Rabanastre - Southern Plaza</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "rabanastre_southern_plaza"
+    },
+    {
+      "id": "marker_002",
+      "geocode": [340, 1350],
+      "popup": "<h3>To Dalmasca Estersand - The Stepping</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "dalmasca_estersand_the_stepping"
+    }
+  ],
+  "rabanastre_west_gate": [
+    {
+      "id": "marker_001",
+      "geocode": [450, 1350],
+      "popup": "<h3>To Rabanastre - Southern Plaza</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "rabanastre_southern_plaza"
+    },
+    {
+      "id": "marker_002",
+      "geocode": [450, 90],
+      "popup": "<h3>To Dalmasca Estersand - The Stepping</h3>",
+      "icon": {
+        "url": "/final-fantasy-12-TZA-Interactive-map-react/Icons/ff12arrow.png",
+        "size": [30, 30]
+      },
+      "isHoverOnly": true,
+      "targetMap": "dalmasca_estersand_the_stepping"
+    }
+  ],
   "dalmasca_estersand_the_stepping": [],
   "dalmasca_estersand_yardang_labyrinth": []
 }

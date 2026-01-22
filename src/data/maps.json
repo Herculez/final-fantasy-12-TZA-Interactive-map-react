@@ -1,4 +1,15 @@
 {
+  "rabanastre_north_end": {
+    "id": "rabanastre_north_end",
+    "region": "Rabanastre",
+    "filename": "NorthEnd.png",
+    "displayName": "Rabanastre - North End",
+    "bounds": [[0,0],[2109,2555]],
+    "center": [1054, 1277],
+    "zoom": -2,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
   "rabanastre_muthru_bazaar": {
     "id": "rabanastre_muthru_bazaar",
     "region": "Rabanastre",
@@ -39,8 +50,8 @@
     "displayName": "Rabanastre - South Gate",
     "bounds": [[0,0],[1409,780]],
     "center": [704, 390],
-    "zoom": -1,
-    "minZoom": -1,
+    "zoom": -2,
+    "minZoom": -2,
     "maxZoom": 1
   },
   "rabanastre_east_gate": {
@@ -50,8 +61,8 @@
     "displayName": "Rabanastre - East Gate",
     "bounds": [[0,0],[809,1430]],
     "center": [404, 765],
-    "zoom": -1,
-    "minZoom": -1,
+    "zoom": -2,
+    "minZoom": -2,
     "maxZoom": 1
   },
   "rabanastre_west_gate": {
@@ -61,8 +72,8 @@
     "displayName": "Rabanastre - West Gate",
     "bounds": [[0,0],[809,1430]],
     "center": [404, 765],
-    "zoom": -1,
-    "minZoom": -1,
+    "zoom": -2,
+    "minZoom": -2,
     "maxZoom": 1
   },
   "dalmasca_estersand_the_stepping": {
@@ -76,11 +87,110 @@
     "minZoom": -3,
     "maxZoom": 1
   },
+  "dalmasca_estersand_outpost": {
+    "id": "dalmasca_estersand_outpost",
+    "region": "DalmascaEstersand",
+    "filename": "Outpost.png",
+    "displayName": "Dalmasca Estersand - Outpost",
+    "bounds": [[0,0],[3438,3076]],
+    "center": [1719, 1538],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
   "dalmasca_estersand_yardang_labyrinth": {
     "id": "dalmasca_estersand_yardang_labyrinth",
     "region": "DalmascaEstersand",
     "filename": "YardangLabyrinth.png",
     "displayName": "Dalmasca Estersand - Yardang Labyrinth",
+    "bounds": [[0,0],[3438,3076]],
+    "center": [1719, 1538],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "dalmasca_estersand_sand-swept_maze": {
+    "id": "dalmasca_estersand_sand-swept_maze",
+    "region": "DalmascaEstersand",
+    "filename": "Sand-sweptMaze.png",
+    "displayName": "Dalmasca Estersand - Sand-swept Maze",
+    "bounds": [[0,0],[3438,3076]],
+    "center": [1719, 1538],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "dalmasca_estersand_passage_entrance": {
+    "id": "dalmasca_estersand_passage_entrance",
+    "region": "DalmascaEstersand",
+    "filename": "PassageEntrance.png",
+    "displayName": "Dalmasca Estersand - Passage Entrance",
+    "bounds": [[0,0],[3438,3076]],
+    "center": [1719, 1538],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "dalmasca_estersand_banks_of_the_nebra": {
+    "id": "dalmasca_estersand_banks_of_the_nebra",
+    "region": "DalmascaEstersand",
+    "filename": "BanksOfTheNebra.png",
+    "displayName": "Dalmasca Estersand - Banks Of The Nebra",
+    "bounds": [[0,0],[3438,3076]],
+    "center": [1719, 1538],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "dalmasca_estersand_murmuring_defile": {
+    "id": "dalmasca_estersand_murmuring_defile",
+    "region": "DalmascaEstersand",
+    "filename": "MurmuringDefile.png",
+    "displayName": "Dalmasca Estersand - Murmuring Defile",
+    "bounds": [[0,0],[3438,3076]],
+    "center": [1719, 1538],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "dalmasca_estersand_south_bank_village": {
+    "id": "dalmasca_estersand_south_bank_village",
+    "region": "DalmascaEstersand",
+    "filename": "SouthBankVillage.png",
+    "displayName": "Dalmasca Estersand - South Bank Village",
+    "bounds": [[0,0],[3438,3076]],
+    "center": [1719, 1538],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "dalmasca_estersand_north_bank_village": {
+    "id": "dalmasca_estersand_north_bank_village",
+    "region": "DalmascaEstersand",
+    "filename": "NorthBankVillage.png",
+    "displayName": "Dalmasca Estersand - North Bank Village",
+    "bounds": [[0,0],[3438,3076]],
+    "center": [1719, 1538],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "dalmasca_estersand_the_yoma": {
+    "id": "dalmasca_estersand_the_yoma",
+    "region": "DalmascaEstersand",
+    "filename": "TheYoma.png",
+    "displayName": "Dalmasca Estersand - The Yoma",
+    "bounds": [[0,0],[3438,3076]],
+    "center": [1719, 1538],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "dalmasca_estersand_broken_sands": {
+    "id": "dalmasca_estersand_broken_sands",
+    "region": "DalmascaEstersand",
+    "filename": "BrokenSands.png",
+    "displayName": "Dalmasca Estersand - Broken Sands",
     "bounds": [[0,0],[3438,3076]],
     "center": [1719, 1538],
     "zoom": -3,
