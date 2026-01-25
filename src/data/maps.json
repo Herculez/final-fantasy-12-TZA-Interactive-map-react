@@ -383,5 +383,170 @@
     "zoom": -2,
     "minZoom": -2,
     "maxZoom": 1
+  },
+  "dalmasca_westersand_corridor_of_sand": {
+    "id": "dalmasca_westersand_corridor_of_sand",
+    "region": "DalmascaWestersand",
+    "filename": "CorridorOfSand.png",
+    "displayName": "Dalmasca Westersand - Corridor Of Sand",
+    "bounds": [[0,0],[3701,6642]],
+    "center": [1850, 3321],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "dalmasca_westersand_galtea_downs": {
+    "id": "dalmasca_westersand_galtea_downs",
+    "region": "DalmascaWestersand",
+    "filename": "GalteaDowns.png",
+    "displayName": "Dalmasca Westersand - Galtea Downs",
+    "bounds": [[0,0],[5218,4334]],
+    "center": [2609, 2167],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "dalmasca_westersand_shimmering_horizons": {
+    "id": "dalmasca_westersand_shimmering_horizons",
+    "region": "DalmascaWestersand",
+    "filename": "ShimmeringHorizons.png",
+    "displayName": "Dalmasca Westersand - Shiimering Horizons",
+    "bounds": [[0,0],[5343,8200]],
+    "center": [2671, 4100],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "dalmasca_westersand_the_midfault": {
+    "id": "dalmasca_westersand_the_midfault",
+    "region": "DalmascaWestersand",
+    "filename": "TheMidfault.png",
+    "displayName": "Dalmasca Westersand - The Midfault",
+    "bounds": [[0,0],[3784,5092]],
+    "center": [1892, 2546],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "dalmasca_westersand_the_western_divide": {
+    "id": "dalmasca_westersand_the_western_divide",
+    "region": "DalmascaWestersand",
+    "filename": "TheWesternDivide.png",
+    "displayName": "Dalmasca Westersand - The Western Divide",
+    "bounds": [[0,0],[1222,2218]],
+    "center": [611,1109],
+    "zoom": -2,
+    "minZoom": -2,
+    "maxZoom": 1
+  },
+  "dalmasca_westersand_windtrace_dunes": {
+    "id": "dalmasca_westersand_windtrace_dunes",
+    "region": "DalmascaWestersand",
+    "filename": "WindtraceDunes.png",
+    "displayName": "Dalmasca Westersand - Windtrace Dunes",
+    "bounds": [[0,0],[4109,5842]],
+    "center": [2054, 2921],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "dalmasca_westersand_wyrms_nest": {
+    "id": "dalmasca_westersand_wyrms_nest",
+    "region": "DalmascaWestersand",
+    "filename": "WyrmsNest.png",
+    "displayName": "Dalmasca Westersand - Wyrms Nest",
+    "bounds": [[0,0],[1418,2784]],
+    "center": [709, 1392],
+    "zoom": -2,
+    "minZoom": -2,
+    "maxZoom": 1
+  },
+  "giza_plains_crystal_glade_dry": {
+    "id": "giza_plains_crystal_glade_dry",
+    "region": "GizaPlains",
+    "filename": "CrystalGladeDry.png",
+    "displayName": "Giza Plains (Dry) - Crystal Glade",
+    "bounds": [[0,0],[1367,1451]],
+    "center": [683, 725],
+    "zoom": -2,
+    "minZoom": -2,
+    "maxZoom": 1
+  },
+  "giza_plains_gizas_north_bank": {
+    "id": "giza_plains_gizas_north_bank",
+    "region": "GizaPlains",
+    "filename": "GizasNorthBankDry.png",
+    "displayName": "Giza Plains (Dry) - Giza's North Bank",
+    "bounds": [[0,0],[5051,4392]],
+    "center": [2525, 2196],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "giza_plains_gizas_south_bank": {
+    "id": "giza_plains_gizas_south_bank",
+    "region": "GizaPlains",
+    "filename": "GizasSouthBankDry.png",
+    "displayName": "Giza Plains (Dry) - Giza's South Bank",
+    "bounds": [[0,0],[4384,4826]],
+    "center": [2193, 2413],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "giza_plains_nomad_village_dry": {
+    "id": "giza_plains_nomad_village_dry",
+    "region": "GizaPlains",
+    "filename": "NomadVillageDry.png",
+    "displayName": "Giza Plains (Dry) - Nomad Village",
+    "bounds": [[0,0],[2318,1909]],
+    "center": [1159, 954],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "giza_plains_starfall_field_dry": {
+    "id": "giza_plains_starfall_field_dry",
+    "region": "GizaPlains",
+    "filename": "StarfallFieldDry.png",
+    "displayName": "Giza Plains (Dry) - Starfall Field",
+    "bounds": [[0,0],[5434,4759]],
+    "center": [2717, 2379],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "giza_plains_throne_road_dry": {
+    "id": "giza_plains_throne_road_dry",
+    "region": "GizaPlains",
+    "filename": "ThroneRoadDry.png",
+    "displayName": "Giza Plains (Dry) - Throne Road",
+    "bounds": [[0,0],[4042,4650]],
+    "center": [2021, 2325],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "giza_plains_toam_hills_dry": {
+    "id": "giza_plains_toam_hills_dry",
+    "region": "GizaPlains",
+    "filename": "ToamHillsDry.png",
+    "displayName": "Giza Plains (Dry) - Toam Hills",
+    "bounds": [[0,0],[3851,4959]],
+    "center": [1925, 2480],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
+  },
+  "giza_plains_warriors_wash_dry": {
+    "id": "giza_plains_warriors_wash_dry",
+    "region": "GizaPlains",
+    "filename": "WarriorsWashDry.png",
+    "displayName": "Giza Plains (Dry) - Warrior's Wash",
+    "bounds": [[0,0],[4643,3409]],
+    "center": [2321, 1704],
+    "zoom": -3,
+    "minZoom": -3,
+    "maxZoom": 1
   }
 }
