@@ -1,4 +1,4 @@
-import {useState, useEffect, useMemo} from 'react';
+import {useState, useEffect} from 'react';
 import {
     getMapById,
     getNextMapId,
@@ -11,35 +11,34 @@ export const useMapData = (initialMapId) => {
     const [currentMapId, setCurrentMapId] = useState(initialMapId);
     const [currentMap, setCurrentMap] = useState(null);
     const [connectedMapIds, setConnectedMapIds] = useState([]);
+    const [hasNext, setHasNext] = useState(false);
+    const [hasPrevious, setHasPrevious] = useState(false);
 
     // update mapdata when current map id changes
     useEffect( () => {
-        const mapData = getMapById(currentMapId);
-        const connections = getConnectionsByMapID(currentMapId);
-
-        setCurrentMap(mapData);
-        setConnectedMapIds(connections);
-    }, [currentMapId]);
-
-    const hasNext = useMemo(() => {
-
-        return getNextMapId(currentMapId) !== null;
-    }, [currentMapId]);
-
-    const hasPrevious = useMemo(() => {
-        return getPreviousMapId(currentMapId) !== null;
+        async function fetchData()  {
+            const mapData = await getMapById(currentMapId);
+            const connections = await getConnectionsByMapID(currentMapId);
+            const nextId = await getNextMapId(currentMapId);
+            const previousId = await getPreviousMapId(currentMapId);
+            setCurrentMap(mapData);
+            setConnectedMapIds(connections ?? []);
+            setHasNext(nextId !== null);
+            setHasPrevious(previousId !== null);
+        }
+        fetchData();
     }, [currentMapId]);
 
     // nav functions
-    const goToNextMap = () => {
-        const nextMapId = getNextMapId(currentMapId);
+    const goToNextMap = async () => {
+        const nextMapId = await getNextMapId(currentMapId);
         if (nextMapId) {
             setCurrentMapId(nextMapId);
         }
     };
 
-    const goToPreviousMap = () => {
-        const previousMapId = getPreviousMapId(currentMapId);
+    const goToPreviousMap = async () => {
+        const previousMapId = await getPreviousMapId(currentMapId);
         if (previousMapId) {
             setCurrentMapId(previousMapId);
         }

@@ -7,15 +7,23 @@ const router = Router();
 router.get('/', (req, res) => {
     const markers = db.prepare('SELECT * FROM markers').all();
     console.log("All Markers Got")
-    if (markers.length === 0) return res.status(404).json({ error: 'Not found' });
-    res.send(markers);
+    const parsed = markers.map(row => ({
+        ...row,
+        geocode: JSON.parse(row.geocode),
+        icon: JSON.parse(row.icon)
+    }));
+    res.send(parsed);
 });
 
 router.get('/:map', (req, res) => {
     const markers = db.prepare('SELECT * FROM markers WHERE map = ?').all(req.params.map);
     console.log("All Markers Got From Map = ", req.params.map);
-    if (markers.length === 0) return res.status(404).json({ error: 'Not found' });
-    res.send(markers);
+    const parsed = markers.map(row => ({
+        ...row,
+        geocode: JSON.parse(row.geocode),
+        icon: JSON.parse(row.icon)
+    }));
+    res.send(parsed);
 });
 
 router.post('/', (req, res) => {

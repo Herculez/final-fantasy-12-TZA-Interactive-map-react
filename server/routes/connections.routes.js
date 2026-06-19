@@ -4,11 +4,16 @@ import db from '../db.js';
 
 const router = Router();
 
-router.get('/', (req, res) => {
-    const connections = db.prepare('SELECT * FROM connections').all();
+router.get('/:map', (req, res) => {
+    const connections = db.prepare('SELECT * FROM connections WHERE map = ?').all(req.params.map);
     if (!connections) return res.status(404).json({ error: 'Not found' });
     console.log("All Connections Got")
-    res.send(connections);
+    const parsed = connections.map(row => ({
+        ...row,
+        connections: JSON.parse(row.connections)
+    }));
+
+    res.json(parsed.length > 0 ? parsed[0].connections : []);
 });
 
 router.post('/', (req, res) => {
