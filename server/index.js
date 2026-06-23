@@ -11,14 +11,10 @@ const port = 3001;
 app.use(cors());
 app.use(express.json());
 
-
-
-
 // Routes
-
 app.get('/', (req, res) => {
     res.send('Hello World!');
-})
+});
 
 app.use('/api/maps', mapsRoutes);
 app.use('/api/map', mapRoutes);
@@ -26,7 +22,6 @@ app.use('/api/markers', markerRoutes);
 app.use('/api/connections', connectionsRoutes);
 
 // LISTEN
-
 app.listen(port, () => {
     console.log(`Server started on port ${port}`);
 });
