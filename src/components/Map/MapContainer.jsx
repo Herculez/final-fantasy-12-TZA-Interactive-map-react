@@ -1,11 +1,17 @@
-import {MapContainer as LeafletMap, ImageOverlay, Marker} from 'react-leaflet';
+import { MapContainer as LeafletMap, ImageOverlay } from 'react-leaflet';
+import { useMapEvents } from 'react-leaflet';
 import L from 'leaflet';
 import { getMapImagePath } from "../../utils/constants.js";
 import MapMarker from "./MapMarker.jsx";
 
 // main map display
 
-const MapContainer = ({ mapData, markers, onMarkerClick}) => {
+const ClickHandler = ({ onMapClick }) => {
+    useMapEvents({ click: (e) => onMapClick(e.latlng) });
+    return null;
+};
+
+const MapContainer = ({ mapData, markers, onMarkerClick, adminMode = false, onMapClick }) => {
 
     if (!mapData) {
         return <div>Loading Map...</div>;
@@ -17,7 +23,7 @@ const MapContainer = ({ mapData, markers, onMarkerClick}) => {
     console.log("Markers for map:", mapData.id, mapMarkers);
 
     return (
-        <LeafletMap className= "leaflet-container"
+        <LeafletMap className={`leaflet-container${adminMode ? ' admin-mode' : ''}`}
             key={mapData.id}
             center={mapData.center}
             zoom={mapData.zoom}
@@ -29,16 +35,16 @@ const MapContainer = ({ mapData, markers, onMarkerClick}) => {
             <ImageOverlay
                 url={imagePath}
                 bounds={mapData.bounds}
-            ></ImageOverlay>
+            />
 
-            {mapMarkers
-                .map((marker) => (
+            {adminMode && onMapClick && <ClickHandler onMapClick={onMapClick} />}
+
+            {mapMarkers.map((marker) => (
                 <MapMarker
                     key={marker.id}
                     marker={marker}
                     onMarkerClick={onMarkerClick}
-                >
-                </MapMarker>
+                />
             ))}
         </LeafletMap>
     );

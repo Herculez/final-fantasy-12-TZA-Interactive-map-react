@@ -416,6 +416,114 @@ body {
   background-color: var(--ivalice-blue);
 }
 
+.leaflet-container.admin-mode {
+  cursor: crosshair !important;
+}
+
+/* Map admin placement overlay */
+.map-admin-toggle {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1000;
+  padding: 6px 14px;
+  background: #1a1a2e;
+  color: var(--ivalice-cream);
+  border: 1px solid var(--ivalice-bronze);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.map-admin-toggle.active {
+  background: #2a2a5e;
+  border-color: #88f;
+  color: #aaf;
+}
+
+.map-admin-form {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 1000;
+  background: #111;
+  border: 1px solid var(--ivalice-bronze);
+  border-radius: 6px;
+  padding: 14px;
+  width: 260px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  color: var(--ivalice-cream);
+}
+
+.map-admin-form h4 {
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: var(--ivalice-gold);
+}
+
+.map-admin-coords {
+  font-family: monospace;
+  font-size: 11px;
+  color: #888;
+  margin: 0 0 10px;
+}
+
+.map-admin-field {
+  margin-bottom: 8px;
+}
+
+.map-admin-field label {
+  display: block;
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 2px;
+}
+
+.map-admin-field input,
+.map-admin-field select {
+  width: 100%;
+  padding: 4px 6px;
+  background: #2a2a2a;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+.map-admin-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #ccc;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.map-admin-error {
+  color: #f88;
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+.map-admin-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.map-admin-btn {
+  padding: 5px 12px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.map-admin-btn-green { background: #2a6640; }
+.map-admin-btn-gray  { background: #555; }
+
 /* Custom Leaflet Popup */
 .leaflet-popup-content-wrapper {
   background: linear-gradient(135deg, var(--ivalice-brown) 0%, var(--ivalice-dark) 100%) !important;

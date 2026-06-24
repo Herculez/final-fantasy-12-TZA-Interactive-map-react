@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 import {getMarkersByMapID} from "../services/mapService.js";
 
 // hook for markers by map
-export const useMarkers = (mapId) => {
+export const useMarkers = (mapId, refreshKey = 0) => {
     const [markers, setMarkers] = useState([]);
     const [loading, setLoading] = useState(false);
 
@@ -18,7 +18,7 @@ export const useMarkers = (mapId) => {
             setLoading(false);
         }
         fetchData();
-    }, [mapId]);
+    }, [mapId, refreshKey]);
 
     return markers;
 }
